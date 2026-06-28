@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)file:///C:/Users/duhearthepps/Downloads/index_5.html -->
+<!-- saved from url=(0052)file:///C:/Users/duhearthepps/Downloads/index_6.html -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>张熙 个人作品集</title>
+<title>张熙 — 个人作品集</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link href="./index_files/css2" rel="stylesheet">
 <style>
@@ -518,6 +518,13 @@
     border: 1px solid var(--border);
   }
 
+  .img-caption {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 10px;
+  }
+
   .video-caption {
     font-size: 11px;
     letter-spacing: 0.08em;
@@ -541,6 +548,8 @@
       grid-template-columns: 1fr;
       gap: 10px;
     }
+    .practice-item:hover { padding-left: 0; }
+    .square-img-wrap { width: 100%; }
     footer { flex-direction: column; gap: 12px; text-align: center; }
     .video-grid { grid-template-columns: 1fr; }
   }
@@ -554,11 +563,11 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="file:///C:/Users/duhearthepps/Downloads/index_5.html#">张熙</a>
+  <a class="nav-logo" href="file:///C:/Users/duhearthepps/Downloads/index_6.html#">张熙</a>
   <ul class="nav-links">
-    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_5.html#photography">摄影</a></li>
-    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_5.html#magazine">杂志</a></li>
-    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_5.html#practice">实践</a></li>
+    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_6.html#photography">摄影</a></li>
+    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_6.html#magazine">杂志</a></li>
+    <li><a href="file:///C:/Users/duhearthepps/Downloads/index_6.html#practice">实践</a></li>
   </ul>
 </nav>
 
@@ -581,29 +590,29 @@
   </div>
   <div class="photo-grid">
     <!-- 替换 src 为你自己的图片路径，例如 src="images/1b1a3ef8b30b53546780cd754a68672f.jpg" -->
-    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <div class="photo-placeholder">你的摄影作品</div>
      <img src="images/1b1a3ef8b30b53546780cd754a68672f.jpg" alt="摄影作品一">
       <div class="photo-item-overlay"><span class="photo-item-label">等待</span></div>
     </div>
-    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <div class="photo-placeholder">作品二</div>
       <img src="images/1b09bf171c13bd5d20e42b1de128bda4.jpg" alt="摄影作品二"> 
       <div class="photo-item-overlay"><span class="photo-item-label">青羊宫</span></div>
     </div>
-    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <div class="photo-placeholder">作品三</div>
-     <img src="images/e3ac56a114d4311907ca3b7470bb5f6d.jpg" alt="摄影作品三"> 
+      <img src="images/e3ac56a114d4311907ca3b7470bb5f6d.jpg" alt="摄影作品三">
       <div class="photo-item-overlay"><span class="photo-item-label">比赛照片[足球]</span></div>
     </div>
-    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <div class="photo-placeholder">作品四</div>
-     <img src="images/597dadb4495253aafb7e527b9e27d129.jpg" alt="摄影作品四">
+     <img src="images/597dadb4495253aafb7e527b9e27d129.jpg" alt="摄影作品四"> 
       <div class="photo-item-overlay"><span class="photo-item-label">比赛照片[足球]</span></div>
     </div>
-    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="photo-item" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <div class="photo-placeholder">作品五</div>
-   <img src="images/f316b72cf3e856118d6d6f5eb5eb8592.jpg" alt="摄影作品五">
+      <img src="images/f316b72cf3e856118d6d6f5eb5eb8592.jpg" alt="摄影作品五">
       <div class="photo-item-overlay"><span class="photo-item-label">体育精神</span></div>
     </div>
   </div>
@@ -616,8 +625,8 @@
     <h2 class="section-title">杂志</h2>
   </div>
   <div class="magazine-grid">
-    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
-      <img src="images/7872228c47b45fe652c8eab341e50cc9.jpg" alt="杂志封面一"> 
+    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
+    <img src="images/7872228c47b45fe652c8eab341e50cc9.jpg" alt="杂志封面一"> 
       <div class="photo-placeholder">杂志封面 / 内页</div>
       <div class="mag-card-info">
         <p class="mag-issue">Vol. 01</p>
@@ -625,8 +634,8 @@
         <p class="mag-meta">设计及文案 · 2025</p>
       </div>
     </div>
-    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
-       <img src="images/773013cc6b984e852f6c8bb12043c6d4.jpg" alt="杂志封面二">
+    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
+       <img src="images/773013cc6b984e852f6c8bb12043c6d4.jpg" alt="杂志封面二"> 
       <div class="photo-placeholder">杂志封面 / 内页</div>
       <div class="mag-card-info">
         <p class="mag-issue">Vol. 02</p>
@@ -634,7 +643,7 @@
         <p class="mag-meta">设计及文案· 2025</p>
       </div>
     </div>
-    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;).src)">
+    <div class="mag-card" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
       <img src="images/fa40143dce5c25f720f742cf2b4a5c63.jpg" alt="杂志封面三"> 
       <div class="photo-placeholder">杂志封面 / 内页</div>
       <div class="mag-card-info">
@@ -657,18 +666,18 @@
     <!-- 实践条目一 -->
     <div class="practice-item practice-item--image">
       <span class="practice-date">2024</span>
-      <div style="flex:1">
+      <div>
         <h3 class="practice-name">公众号实践[部分展示]</h3>
         <p class="practice-desc" style="margin-bottom:24px;">此公众号主要以年轻受众为主，主要探讨年轻人那些事儿。</p>
         <!-- 正方形图片：替换 src 为你的图片路径，如 src="images/practice1.jpg" -->
         <div class="square-img-wrap" onclick="openLightbox(this.querySelector(&#39;img&#39;) ? this.querySelector(&#39;img&#39;).src : &#39;&#39;)">
-           <img src="images9148e16fbf8e1cbfd76e6a681cd29f37.jpg" alt="项目图片">
+           <img src="images/9148e16fbf8e1cbfd76e6a681cd29f37.jpg" alt="项目图片">
           <div class="square-placeholder">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" stroke="currentColor" stroke-width="0.8" opacity="0.4"></rect><path d="M1 22l8-8 6 6 5-5 11 11" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.4"></path><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="0.8" opacity="0.4"></circle></svg>
             <span>替换为图片</span>
           </div>
         </div>
-        <p class="video-caption" style="margin-top:10px;">年轻世相</p>
+        <p class="img-caption">年轻世相</p>
       </div>
       <span class="practice-tag">公众号长图</span>
     </div>
@@ -676,7 +685,7 @@
     <!-- 实践条目二：含视频 -->
     <div class="practice-item practice-item--video">
       <span class="practice-date">2024</span>
-      <div style="flex:1">
+      <div>
         <h3 class="practice-name">大广赛作品</h3>
         <p class="practice-desc" style="margin-bottom:28px;">视频为赤尾、超能品牌广告。</p>
         <div class="video-grid">
@@ -684,7 +693,7 @@
           <!-- 也可以嵌入 B站/YouTube，将 <video> 替换为对应的 <iframe> -->
           <div class="video-wrap">
             <video controls="" preload="none" poster="">
-            <source src="videos/videos1.mp4" type="video/mp4"> 
+             <source src="videos/videos1.mp4" type="video/mp4">
             </video>
             <div class="video-placeholder">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1"></circle><polygon points="14,11 28,18 14,25" fill="currentColor" opacity="0.5"></polygon></svg>
@@ -695,7 +704,7 @@
           <!-- 视频二 -->
           <div class="video-wrap">
             <video controls="" preload="none" poster="">
-             <source src="videos/videos2.mp4" type="video/mp4">
+              <source src="videos/videos2.mp4" type="video/mp4"> 
             </video>
             <div class="video-placeholder">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1"></circle><polygon points="14,11 28,18 14,25" fill="currentColor" opacity="0.5"></polygon></svg>
@@ -714,29 +723,9 @@
 <!-- FOOTER -->
 <footer>
   <span class="footer-name">张熙 &nbsp;©&nbsp; 2026</span>
-  <span class="footer-contact">联系方式 &nbsp;/&nbsp; <a href="mailto:your@email.com">3176417821@qq.com</a></span>
+  <span class="footer-contact">联系方式 &nbsp;/&nbsp; <a href="mailto:3176417821@qq.com">3176417821@qq.com</a></span>
 </footer>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <img id="lightbox-img" src="file:///C:/Users/duhearthepps/Downloads/index_5.html" alt="">
-</div>
-
-<script>
-  function openLightbox(src) {
-    if (!src) return;
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox').classList.add('open');
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
-  }
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
-  });
-</script>
-
-
-
-</body></html>
+  <button class="lightbox-close" onc
